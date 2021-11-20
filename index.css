@@ -2,6 +2,10 @@ html, body {
     height: 100%;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+
 .collapsible-content {
     padding: 0 18px;
     max-height: 0px;

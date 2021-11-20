@@ -51,14 +51,17 @@
                     ▣ <a href="average-number-function.html">Average Number Function</a><br />
                     ▣ <a href="factorial-function.html">Factorial Function</a><br />
                     ▣ <a href="how-to-get-multiple-rows.html">How to get Multiple Rows</a><br />
-                    ▣ <a href="#5">IN OUT argument example</a><br />
+                    ▣ <a href="in-out-arg-plsql-example.html">IN OUT argument example</a><br />
                 </div>
                 <hr/>
         </div>
         <div id=art-body-container>
         <div class="container center" id="art-body">
             <h3>Q.&nbsp; Write A PL/SQL Procedure To Reverse A Given Number (MySQL).</h3><br/>
-            <pre><code><span onclick="copycode(1)"><i class="fas fa-copy"></i></span>> DELIMITER $$
+            <h5>Solution:</h5>
+            <h4>Step 1: Creating a Procedure</h4>
+            <span>Following PL/SQL code will create a Procedure which will reverse the given number.</span>
+            <pre><code><span onclick="copycode(1.1)"><i class="fas fa-copy"></i></span>> DELIMITER $$
 
 > DROP PROCEDURE IF EXISTS reverse_number$$
 
@@ -76,19 +79,18 @@
   SELECT num AS Number, r_num AS "Reverse Number";
   END$$
 
-> DELIMITER ;
-
-
-
-
-> CALL reverse_number(123);
-
-+--------+----------------+
+> DELIMITER ;</code></pre>
+            <h4>Step 2: Calling Procedure</h4>
+            <span>Following code will call our 'reverse_number' procedure:</span>
+            <pre><code><span onclick="copycode(1.2)"><i class="fas fa-copy"></i></span>> CALL reverse_number(123);</code></pre>
+<span><b>Output:</b></span>
+<pre><code>+--------+----------------+
 | Number | Reverse Number |
 +--------+----------------+
 |    123 |            321 |
 +--------+----------------+
 1 row in set (0.00 sec)</code></pre>
+        <span><b><i>Congratulations!</b> You just learned to write a PL/SQL Procedure to Reverse a number.</i></span>
         </div></div>
         </div>
     </div>

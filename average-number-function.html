@@ -51,14 +51,17 @@
                     ▣ <a href="average-number-function.html" style="color: aqua;"><b><u>Average Number Function</u></b></a><br />
                     ▣ <a href="factorial-function.html">Factorial Function</a><br />
                     ▣ <a href="how-to-get-multiple-rows.html">How to get Multiple Rows</a><br />
-                    ▣ <a href="#5">IN OUT argument example</a><br />
+                    ▣ <a href="in-out-arg-plsql-example.html">IN OUT argument example</a><br />
                 </div>
                 <hr/>
         </div>
         <div id=art-body-container>
         <div class="container center" id="art-body">
             <h3>Q.&nbsp; Write A PL/SQL Function To Get Average Of Numbers (MySQL).</h3><br/>
-            <pre><code><span onclick="copycode(2)"><i class="fas fa-copy"></i></span>> DELIMITER $$
+            <h5>Solution:</h5>
+            <h4>Step 1: Creating Function</h4>
+            <span>Following PL/SQL code will create a Function which can be used to print Average of 4 Numbers.</span>
+            <pre><code><span onclick="copycode(2.1)"><i class="fas fa-copy"></i></span>> DELIMITER $$
 
 > DROP FUNCTION IF EXISTS getavg$$
 
@@ -70,18 +73,19 @@
   RETURN avg;
   END$$
 
-> DELIMITER ;
-
-
-
-
-> SELECT getavg(2, 4, 5, 6);
-+--------------------+
+> DELIMITER ;</code></pre>
+            <p>After successfully executing above code, you will have created your own function to find average.</p>
+            <h4>Step 2: Calling Function</h4>
+            <span>Following query is used to call a PL/SQL Function:</span>
+            <pre><code><span onclick="copycode(2.2)"><i class="fas fa-copy"></i></span>> SELECT getavg(2, 4, 5, 6);</code></pre>
+<span><b>Output:</b></span>
+            <pre><code>+--------------------+
 | getavg(2, 4, 5, 6) |
 +--------------------+
 |                  4 |
 +--------------------+
 1 row in set (0.02 sec)</code></pre>
+        <span><b><i>Congratulations!</b> You just learned to write a PL/SQL Function to find the average of numbers.</i></span>
         </div></div>
         </div>
     </div>

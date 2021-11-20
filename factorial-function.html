@@ -51,14 +51,17 @@
                     ▣ <a href="average-number-function.html">Average Number Function</a><br />
                     ▣ <a href="factorial-function.html"style="color: aqua;"><b><u>Factorial Function</u></b></a><br />
                     ▣ <a href="how-to-get-multiple-rows.html">How to get Multiple Rows</a><br />
-                    ▣ <a href="#5">IN OUT argument example</a><br />
+                    ▣ <a href="in-out-arg-plsql-example.html">IN OUT argument example</a><br />
                 </div>
                 <hr/>
         </div>
         <div id=art-body-container>
         <div class="container center" id="art-body">
             <h3>Q.&nbsp; Write A PL/SQL Function To Find Factorial Of Given Number (MySQL).</h3><br/>
-            <pre><code><span onclick="copycode(3)"><i class="fas fa-copy"></i></span>> DELIMITER $$
+            <h5>Solution:</h5>
+            <h4>Sep 1: Creating A Function</h4>
+            <span>Following PL/SQL code will create a Function which will print the Factorial of given number.</span>
+            <pre><code><span onclick="copycode(3.1)"><i class="fas fa-copy"></i></span>> DELIMITER $$
 
 > DROP FUNCTION IF EXISTS f_factorial$$
 
@@ -76,17 +79,18 @@
   RETURN result;
   END$$
 
-> DELIMITER ;
-
-
-
-
-> SELECT f_factorial(4);
-+----------------+
+> DELIMITER ;</code></pre>
+            <p>After this you will have successfully created <b><i>f_factorial</i></b> function.</p>
+            <h4>Step 2: Calling Function</h4>
+            <span>Following code will be used to call 'f_factorial' Function:</span>
+            <pre><code><span onclick="copycode(3.1)"><i class="fas fa-copy"></i></span>> SELECT f_factorial(4);</code></pre>
+            <span><b>Output:</b></span>
+            <pre><code>+----------------+
 | f_factorial(4) |
 +----------------+
 |             24 |
 +----------------+</code></pre>
+            <span><b><i>Congratulations!</b> You just learned to write a PL/SQL Function to find factorial of a number.</i></span>
         </div></div>
         </div>
     </div>
