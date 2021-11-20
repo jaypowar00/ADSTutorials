@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS Tutorials</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column;">
+        <div class="bg-dark" id="head-logo">
+            <span id="MenuBtn"><i class="fas fa-bars text-white" style="font-size: 28px; margin: -2px 0 0 15px; display: inline-block;"></i></span>
+            <a href="index.html" target="_self">
+                <img class="non-selectable" style="margin: -16px 20px; display: inline-block;" src="ADSTutorials_Icon.png" height="110px" />
+            </a>
+            <span></span>
+        </div>
+        <div id="head-nav-container" style="height: 100vh;">
+            <div class="head-nav" id="headnav">
+                <hr/>
+                <div style="width: 100%; text-align: center; margin-left: -12px;">
+                    <u>PostgreSQL</u>
+                </div>
+                <div id="PostgreSQL-header" style="cursor: pointer;">
+                    <span class="non-selectable">
+                        + Installation
+                    </span>
+                </div>
+                <div class="text-white bg-dark collapsible-content" id="PostgreSQL-Section">
+                    ▣ <a href="#1">Installation of PostgreSQL (Windows)</a><br />
+                    ▣ <a href="#2">Installation of PostgreSQL (Linux)</a><br />
+                </div>
+                <hr/>
+                <div style="width: 100%; text-align: center; margin-left: -12px;">
+                    <u>MySQL</u>
+                </div>
+                <div id="MySQL-header" style="cursor: pointer;">
+                    <span class="non-selectable">
+                        + PL/SQL
+                    </span>
+                </div>
+                <div class="text-white bg-dark collapsible-content" id="MySQL-Section">
+                    ▣ <a href="reverse-a-number-procedure.html">Reverse Number Procedure</a><br />
+                    ▣ <a href="average-number-function.html">Average Number Function</a><br />
+                    ▣ <a href="factorial-function.html">Factorial Function</a><br />
+                    ▣ <a href="how-to-get-multiple-rows.html">How to get Multiple Rows</a><br />
+                    ▣ <a href="#5">IN OUT argument example</a><br />
+                </div>
+                <hr/>
+        </div>
+        <div id=art-body-container>
+            <div class="container center" id="art-body">
+            <h3>Welcome to ADS Tutorials!</h3>
+            <p>
+                This website contains tutorials & examples for some database languages like MySQL, PostgreSQL, etc.<br/>
+                More content will get added in the future.
+            </p>
+            <hr/>
+            <h5>#Quick Navigations:</h5>
+            <dl>
+                <dt>1.PostgreSQL :</dt>
+                <dd>
+                    <ol>
+                        <li><a href="#1">Installation of PostgreSQL (Windows)</a></li>
+                        <li><a href="#2">Installation of PostgreSQL (Linux)</a></li>
+                    </ol>
+                </dd>
+                <dt>2.MySQL :</dt>
+                <dd>
+                    <ol>
+                        <li><a href="reverse-a-number-procedure.html">Reverse Number Procedure</a></li>
+                        <li><a href="average-number-function.html">Average Number Function</a></li>
+                        <li><a href="factorial-function.html">Factorial Function</a></li>
+                        <li><a href="how-to-get-multiple-rows.html">How to get Multiple Rows</a></li>
+                        <li><a href="#4">IN OUT argument example</a></li>
+                    </ol>
+                </dd>
+            </dl>
+            <br/>
+            Use the navigation panel on the Left Side to select specific Tutorials/Examples
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
