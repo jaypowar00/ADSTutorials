@@ -22,21 +22,23 @@ function copycode(n) {
         navigator.clipboard.writeText("DELIMITER $$\nDROP FUNCTION IF EXISTS getavg$$\nCREATE FUNCTION getavg(n1 INT, n2 INT, n3 INT, n4 INT)\nRETURNS INT\nBEGIN\nDECLARE avg INT;\nSET avg = (n1+n2+n3+n4)/4;\nRETURN avg;\nEND$$\nDELIMITER ;\n");
     else if (n==2.2)
         navigator.clipboard.writeText("SELECT getavg(2, 4, 5, 6);\n");
-    else if (n==3)
-        navigator.clipboard.writeText("DELIMITER $$\nDROP FUNCTION IF EXISTS f_factorial$$\nCREATE FUNCTION f_factorial(n1 INT)\nRETURNS INT\nBEGIN\nDECLARE result INT;\nDECLARE i INT;\nSET result = 1;\nSET i = 1;\nWHILE i <= n1 DO\nSET result = result * i;\nSET i = i + 1;\nEND WHILE;\nRETURN result;\nEND$$\nDELIMITER ;\nSELECT f_factorial(4);\n");
-    else if (n==4)
+    else if (n==3.1)
+        navigator.clipboard.writeText("DELIMITER $$\nDROP FUNCTION IF EXISTS f_factorial$$\nCREATE FUNCTION f_factorial(n1 INT)\nRETURNS INT\nBEGIN\nDECLARE result INT;\nDECLARE i INT;\nSET result = 1;\nSET i = 1;\nWHILE i <= n1 DO\nSET result = result * i;\nSET i = i + 1;\nEND WHILE;\nRETURN result;\nEND$$\nDELIMITER ;\n");
+    else if (n==3.2)
+        navigator.clipboard.writeText("SELECT f_factorial(4);\n");
+    else if (n==4.1)
         navigator.clipboard.writeText("DELIMITER $$\nDROP FUNCTION IF EXISTS f_factorial$$\nCREATE FUNCTION f_factorial(n1 INT)\nRETURNS INT\nBEGIN\nDECLARE result INT;\nDECLARE i INT;\nSET result = 1;\nSET i = 1;\nWHILE i &lt;= n1 DO\nSET result = result * i;\nSET i = i + 1;\nEND WHILE;\nRETURN result;\nEND$$\nDELIMITER ;\n");
-    else if (n==5)
+    else if (n==4.2)
         navigator.clipboard.writeText("DELIMITER $$\nDROP PROCEDURE IF EXISTS getFactorials$$\nCREATE PROCEDURE getFactorials(IN n INT)\nBEGIN\nSELECT num as 'Number', f_factorial(num) as 'Factorial' FROM Natural_Numbers WHERE num &lt;=n;\nEND$$\nDELIMITER ;\n");
-    else if (n==6)
+    else if (n==4.3)
         navigator.clipboard.writeText("call getFactorials(10);\n");
-    else if (n==7)
+    else if (n==5.1)
         navigator.clipboard.writeText("DELIMITER $$\nDROP PROCEDURE IF EXISTS sumproduct$$\nCREATE PROCEDURE sumproduct(IN n1 INT, IN n2 INT, OUT sum INT, OUT pro INT)\nBEGIN\nSET sum = n1+n2;\nSET pro = n1*n2;\nEND$$\nDELIMITER ;\n");
-    else if (n==8)
+    else if (n==5.2)
         navigator.clipboard.writeText("CALL sumproduct(3, 4, @s, @p);\n");
-    else if (n==9)
+    else if (n==5.3)
         navigator.clipboard.writeText("SELECT @s;\n");
-    else if (n==10)
+    else if (n==5.4)
         navigator.clipboard.writeText("SELECT @p;\n");
 
 }

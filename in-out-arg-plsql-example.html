@@ -63,7 +63,7 @@
             <p>We now will see an example for <b>IN</b> & <b>OUT</b> parameters in a Procedure.
             <h4>Step 1: Creating Procedure with IN OUT parameters</h4>
             Below code is for getting <b>Addition</b> & <b>Multiplication</b> of 2 numbers provided using <b>IN</b> arguments in respective <b>OUT</b> parameters.</p>
-            <pre><code><span onclick="copycode(7)"><i class="fas fa-copy"></i></span>> DELIMITER $$
+            <pre><code><span onclick="copycode(5.1)"><i class="fas fa-copy"></i></span>> DELIMITER $$
 
 > DROP PROCEDURE IF EXISTS sumproduct$$
 
@@ -77,12 +77,12 @@
             <p>After this you will have a PL/SQL procedure for getting sum and product of 2 numbers.</p>
             <h4>Step 2: Calling Procedure</h4>
             <span>Now we will call this procedure in following manner:</span>
-            <pre><code><span onclick="copycode(8)"><i class="fas fa-copy"></i></span>> CALL sumproduct(3, 4, @s, @p);</code></pre>
+            <pre><code><span onclick="copycode(5.2)"><i class="fas fa-copy"></i></span>> CALL sumproduct(3, 4, @s, @p);</code></pre>
             <p>In MySQL, <b>'@'</b> is used to represent <b><i>user-defined variables</i></b>. In above procedure call, the value of addition will get assigned to <b><i>@s</i></b> and value of product will get assigned to <b><i>@p</i></b>.</p>
             <h4>Step 3: Printing Values from variables:</h4>
             <span>Following queries will print the values stored in our variables.</span><br/>
             <span style="font-size: large; font-weight: 400;">For variable <b>@s</b>:</span>
-            <pre><code><span onclick="copycode(9)"><i class="fas fa-copy"></i></span>> SELECT @s;</code></pre>
+            <pre><code><span onclick="copycode(5.3)"><i class="fas fa-copy"></i></span>> SELECT @s;</code></pre>
             <span><b>Output:</b></span>
             <pre><code>+------+
 | @s   |
@@ -90,7 +90,7 @@
 |    7 |
 +------+</code></pre>
             <span style="font-size: large; font-weight: 400;">For variable <b>@p</b>:</span>
-            <pre><code><span onclick="copycode(10)"><i class="fas fa-copy"></i></span>> SELECT @p;</code></pre>
+            <pre><code><span onclick="copycode(5.4)"><i class="fas fa-copy"></i></span>> SELECT @p;</code></pre>
             <span><b>Output:</b></span>
             <pre><code>+------+
 | @p   |
