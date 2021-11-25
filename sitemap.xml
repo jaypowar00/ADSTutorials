@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://jaypowar00.github.io/ADSTutorials</loc>
+		<priority>0.67</priority>
+		<lastmod>2021-11-25</lastmod>
+	</url>
+	<url>
+		<loc>https://jaypowar00.github.io/ADSTutorials/reverse-a-number-procedure.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2021-11-25</lastmod>
+	</url>
+	<url>
+		<loc>https://jaypowar00.github.io/ADSTutorials/in-out-arg-plsql-example.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2021-11-25</lastmod>
+	</url>
+	<url>
+		<loc>https://jaypowar00.github.io/ADSTutorials/how-to-get-multiple-rows.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2021-11-25</lastmod>
+	</url>
+	<url>
+		<loc>https://jaypowar00.github.io/ADSTutorials/factorial-function.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2021-11-25</lastmod>
+	</url>
+	<url>
+		<loc>https://jaypowar00.github.io/ADSTutorials/average-number-function.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2021-11-25</lastmod>
+	</url>
+</urlset>
